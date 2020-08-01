@@ -10,6 +10,7 @@
         position: relative;
         font-size: $default-font-size;
     }
+    
     &:hover{
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
@@ -19,10 +20,12 @@
             opacity: 0;
         }
     }
+
     &:active{
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
+
     &--white{
         background-color: $color-white;
         color: $color-grey-dark;
@@ -31,6 +34,16 @@
             background-color: $color-white;
         }
     }
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after{
+            background-color: $color-primary;
+        }
+    }
+
     &::after{
         content: "";
         display: inline-block;
@@ -48,6 +61,7 @@
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
     }
+
 }
 
 .btn-text{
