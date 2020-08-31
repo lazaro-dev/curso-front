@@ -271,7 +271,7 @@
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
-                            <form action="#" class="form">
+                            <form class="form" preventdefault>
 
                                 <div class="u-margin-bottom-medium">
                                     <h2 class="heading-secondary">
@@ -308,7 +308,7 @@
                                 </div>
 
                                 <div class="form__group">
-                                    <button class="btn btn--green">Next step &rarr;</button>
+                                    <button class="btn btn--green" id="btnForm">Next step &rarr;</button>
                                 </div>
                             </form>
                         </div>
@@ -318,6 +318,32 @@
 
 
         </main>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="footer__navigation">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="" class="footer__link">Company</a></li>
+                                <li class="footer__item"><a href="" class="footer__link">Contacts</a></li>
+                                <li class="footer__item"><a href="" class="footer__link">Carrers</a></li>
+                                <li class="footer__item"><a href="" class="footer__link">Privacy policy</a></li>
+                                <li class="footer__item"><a href="" class="footer__link">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <p class="footer__copyright">
+                            Build my <a href="#" class="footer__link">Irineu</a> for his online course<a href="#" class="footer__link">CSS and SASS</a>. Copyright &copy; by Jonas Schmedtmann
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
         <!-- <section class="grid-test">
             <div class="row">
                 <div class="col-1-of-2">
@@ -380,5 +406,14 @@
                 </div>                                                               
             </div>
         </section> -->
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+        <script src="./js/firebaseInfo.js"></script>
+        <script src="./js/teste.js"></script>
     </body>
 </html>
