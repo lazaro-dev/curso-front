@@ -28,7 +28,7 @@ firebase.database().ref('cadastro').on('value', snapshot => {
     lista.innerHTML="";
     snapshot.forEach(item => {
         let li = document.createElement('li');
-        li.appendChild(document.createTextNode(item.val().name + ': ', item.val().email));
+        li.appendChild(document.createTextNode(item.val().name + ': ' + item.val().emailIn));
         lista.appendChild(li);
     });
 })
